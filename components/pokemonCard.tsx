@@ -1,5 +1,7 @@
+'use client'
+
 import Link from "next/link";
-import { Card, CardLink } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import TypeButton from "./TypeButton";
 
 const getPokemon = async (url) => {
