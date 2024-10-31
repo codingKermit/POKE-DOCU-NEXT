@@ -1,4 +1,4 @@
-import typeButton from '../css/TypeButton.module.css'
+import typeButton from '../styles/TypeButton.module.css'
 
 export default function TypeButton({type, text}){
     return(
