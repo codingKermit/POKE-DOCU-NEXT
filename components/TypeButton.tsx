@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import typeButton from '../styles/TypeButton.module.css'
 
 export default function TypeButton({type, text}){
