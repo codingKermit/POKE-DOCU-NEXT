@@ -35,11 +35,11 @@ export default async function PokemonContainer({url}:{url:string}){
 
         const typeInfo = await getType(url);
 
-        const filteredTypeData = typeInfo.data.names.filter((d)=>d.language.name === 'ko');
+        const filteredTypeData = typeInfo.names.filter((d)=>d.language.name === 'ko');
 
         const typeItem = {
             text : filteredTypeData[0].name,
-            val : typeInfo.data.name
+            val : typeInfo.name
         }
 
         types.push(typeItem);
