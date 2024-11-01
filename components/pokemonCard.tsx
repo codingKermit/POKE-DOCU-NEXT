@@ -19,10 +19,10 @@ export default function PokemonCard({pokemon, species, types}){
                     <Card.Img src={imgUrl} alt={name}/>
                     <Card.Body>
                         <Card.Text>{name}</Card.Text>
-                        <div className="d-flex">
-                            {types.map((type, index)=><TypeButton key={type+index} type={type.val} text={type.text}/>)}
-                        </div>
                     </Card.Body>
+                    <Card.Footer className="d-flex">
+                        {types.map((type, index)=><TypeButton key={type+index} type={type.val} text={type.text}/>)}
+                    </Card.Footer>
                 </Link>
             </Card>
         </div>
