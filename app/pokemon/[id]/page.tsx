@@ -15,7 +15,9 @@ const getSpecies = async(url)=>{
     return json;
 }
 
-export default async function PokemonDetail({id}:{id:string}){
+export default async function PokemonDetail(props){
+
+    const id = props.params.id;
     
     const url = `${LIST_URL}${id}`;
 
