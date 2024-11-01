@@ -14,6 +14,8 @@ export default function PokemonCard({pokemon, species}){
     
     const name = spec.name;
 
+    console.log(types);
+
     return(
         <div>
             <Card className="mb-3 text-center" >
