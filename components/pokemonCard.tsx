@@ -17,7 +17,7 @@ export default function PokemonCard({pokemon, species}){
     return(
         <div>
             <Card className="mb-3 text-center" >
-                <Link href={`/Pokemon/${pokemon.id}`}>
+                <Link href={`/pokemon/${pokemon.id}`}>
                     <Card.Img src={imgUrl} alt={name}/>
                     <Card.Body>
                         <Card.Text>{name}</Card.Text>
