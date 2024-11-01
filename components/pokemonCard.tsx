@@ -20,7 +20,7 @@ export default function PokemonCard({pokemon, species, types}){
                     <Card.Body>
                         <Card.Text>{name}</Card.Text>
                     </Card.Body>
-                    <Card.Footer className="d-flex">
+                    <Card.Footer className="d-flex text-center">
                         {types.map((type, index)=><TypeButton key={type+index} type={type.val} text={type.text}/>)}
                     </Card.Footer>
                 </Link>
