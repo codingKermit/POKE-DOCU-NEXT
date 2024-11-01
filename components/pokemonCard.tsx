@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Card } from "react-bootstrap";
 import TypeButton from "./TypeButton";
 
-export default async function PokemonCard({pokemon, species}){
+export default function PokemonCard({pokemon, species}){
 
     const imgUrl = pokemon.sprites.front_default;
 
