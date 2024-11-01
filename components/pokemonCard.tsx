@@ -3,22 +3,14 @@
 import Link from "next/link";
 import { Card } from "react-bootstrap";
 import TypeButton from "./TypeButton";
-import { typeRelation } from "../utils/TypeRelation";
 
-export default function PokemonCard({pokemon, species}){
+export default function PokemonCard({pokemon, species, types}){
 
     const imgUrl = pokemon.sprites.front_default;
-
-    let types = pokemon.types;
-
-    types = typeRelation(types);
     
     const spec = species.names.filter((spec)=>spec.language.name === 'ko')[0];
     
     const name = spec.name;
-
-    console.log(types);
-
 
     return(
         <div>
