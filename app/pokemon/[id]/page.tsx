@@ -17,7 +17,7 @@ const getSpecies = async(url)=>{
 
 export default async function PokemonDetail({id}:{id:string}){
     
-    const url = `${LIST_URL}/${id}`;
+    const url = `${LIST_URL}${id}`;
     
     const pokemon = await getPokemon(url);
 
