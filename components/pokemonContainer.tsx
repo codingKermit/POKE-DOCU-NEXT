@@ -25,7 +25,7 @@ export default async function PokemonContainer({url}:{url:string}){
 
     const species = await getSpecies(speciesUrl);
 
-    const typesData = pokemon.data.types;
+    const typesData = pokemon.types;
 
     const types = [];
 
