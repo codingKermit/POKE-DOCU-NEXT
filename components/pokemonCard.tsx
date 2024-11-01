@@ -19,10 +19,10 @@ export default function PokemonCard({pokemon, species}){
             <Card className="mb-3 text-center" >
                 <Link href={`/Pokemon/${pokemon.id}`}>
                     <Card.Img src={imgUrl} alt={name}/>
-                    <Card.Text>{name}</Card.Text>
-                    <Card.Text className="mb-3">
+                    <Card.Body>
+                        <Card.Text>{name}</Card.Text>
                         {types.map((type, index)=><TypeButton key={type+index} type={type.val} text={type.text}/>)}
-                    </Card.Text>
+                    </Card.Body>
                 </Link>
             </Card>
         </div>
