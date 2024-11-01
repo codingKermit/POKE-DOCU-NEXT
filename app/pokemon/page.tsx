@@ -1,4 +1,5 @@
-import PokemonCard from "../../components/pokemonCard";
+import { Row } from "react-bootstrap";
+import PokemonContainer from "../../components/pokemonContainer";
 
 export const LIST_URL = 'https://pokeapi.co/api/v2/pokemon/';
 
@@ -16,13 +17,13 @@ export default async function Pokemon(){
     return(
         <div>
             <div>
-                {pokemons.map((pokemon)=>{
-                    return(
-                        <div key={pokemon.name}>
-                            <PokemonCard url={pokemon.url}/>
-                        </div>
-                    )
-                })}
+                <Row xs={4} sm={4} md={6}>
+                    {pokemons.map((pokemon)=>{
+                        return(
+                            <PokemonContainer key={pokemon.name} url={pokemon.url}/>
+                        )
+                    })}
+                </Row>
             </div>
         </div>
     )
