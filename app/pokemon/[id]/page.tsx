@@ -1,7 +1,7 @@
 import { Col, Container, Image, Row, Table } from "react-bootstrap";
-import { LIST_URL } from "../page"
 import { typeRelation } from "../../../utils/TypeRelation";
 import TypeButton from "../../../components/TypeButton";
+import { LIST_URL } from "../../utils";
 
 const getPokemon = async(url) => {
     const res = await fetch(url);

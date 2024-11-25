@@ -1,0 +1,1 @@
+export const LIST_URL:string = 'https://pokeapi.co/api/v2/pokemon/';

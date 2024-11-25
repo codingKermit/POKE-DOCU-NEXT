@@ -1,7 +1,8 @@
 import { Row } from "react-bootstrap";
 import PokemonContainer from "../../components/pokemonContainer";
+import { LIST_URL } from "../utils";
 
-export const LIST_URL = 'https://pokeapi.co/api/v2/pokemon/';
+
 
 const getPokemons = async () => {
     const res = await fetch(LIST_URL);
